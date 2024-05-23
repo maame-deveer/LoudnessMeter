@@ -14,8 +14,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Assets\cog.svg" />
+    <None Remove="Assets\Images\cog.svg" />
+    <None Remove="Assets\monitor.svg" />
+    <None Remove="Assets\padlock.svg" />
+    <None Remove="Assets\square with pointer.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Avalonia" Version="11.0.10" />
     <PackageReference Include="Avalonia.Desktop" Version="11.0.10" />
+    <PackageReference Include="Avalonia.Svg.Skia" Version="11.0.0.18" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.10" />
     <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.10" />
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
